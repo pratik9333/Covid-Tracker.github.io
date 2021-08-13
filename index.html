@@ -5,9 +5,44 @@
     <meta name="viewport" content="width=device-width">
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+<script src="resp.js"></script>
   </head>
   <body>
-    
+    <section>
+      <nav class="navbar bg  h-nav-resp">
+        <div class="leftnav">
+          <a href="" class="href" alt="logo"></a>
+        </div>
+        <div class="rightnav">
+        <ul class="navlist v-class-resp">
+          <li><a href=""></a></li>
+          <li><a href="#Home" class="navlink">Home</a></li>
+          <li><a href="#About" class="navlink">About</a></li>
+          <li><a href="#Table" class="navlink">Table</a></li>
+          <li><a href="#Contact" class="navlink">Contact</a></li>
+        </ul>
+         <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+      </nav>
+      <script src="resp.js"></script>
+            <script>
+                $(window).scroll(function(){
+                    $('nav').toggleClass('scrolled',$(this).scrollTop()>150);
+                });
+            </script>
+          <script></script>
+      
+      
+      <div class="search">
+        <div class="search-box"></div>
+        <input type="text" class="letters" placeholder="" id="search">
+      </div>
+    </section>
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   </body>
 </html>

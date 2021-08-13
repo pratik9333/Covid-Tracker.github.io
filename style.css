@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'STIX Two Text', serif;
+  font-size: 35px;
+  line-height: 30px;
+  overflow-x: hidden;
+  background: black;
+  
+}
+
+
+
+::selection {
+    background-color: grey;
+  }
+::-webkit-scrollbar {
+        width: 10px;
+        background-color: darkslategrey;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: black;
+      }
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    }
+  
+  .navlist {
+    
+    
+    display: flex;
+    align-items: center;
+    
+  }
+
+
+.navlist li{
+    list-style: none;
+    padding: 10px 20px;
+    
+} 
+
+.navlist li a:hover{
+
+    
+    color: rgb(255, 255, 143);
+
+}
+.navlist li a {
+
+    text-decoration: none;
+    color:white;
+    
+}
+.navbar.bg{
+  z-index: 99;
+  
+}
+.nav-link{
+  font-size: 20px;
+}
+
+ 
+
+  .burger{ 
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+  
+  
+  }
+  .line{
+    width: 33px;
+    background-color:white;
+    height: 4px;
+    margin: 3px 3px;
+  }
+  
+
+
+
+.search{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center; 
+}
+ @media screen and (max-width: 380px) {
+    .navlist{
+      flex-direction: column;
+    }
+  .navbar{
+    flex-direction: column;
+    min-width: 360px;
+    width: 100%;
+    transition: all 0.7s ease-out;
+    height: 200px;
+  }
+   .h-nav-resp{
+      height: 72px;
+    }
+    .v-class-resp{
+      opacity: 0;
+    }
+     .hidden {
+    display: none;
+  }
+  .burger{
+    display: block;
+  }
+  }
